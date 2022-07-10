@@ -34,7 +34,8 @@ const RecipeSchema = Schema({
         required: true
     },
     usuario: {
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: 'User',
         required: true
     },
     en_me_gusta: {
